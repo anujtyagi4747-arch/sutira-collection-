@@ -465,6 +465,1503 @@ function sutiraToggleMenu(){
 }
 
 </script>
+<!-- =========================================
+     SUTIRA COLLECTION
+     PART 2 / 10
+     HERO SECTION
+========================================= -->
 
+<style>
+
+/* =========================================
+   HERO
+========================================= */
+
+.sutira-hero{
+    max-width:1400px;
+    margin:auto;
+    padding:35px 30px 70px;
+
+    display:grid;
+    grid-template-columns:.9fr 1.1fr;
+
+    gap:35px;
+    align-items:center;
+}
+
+/* =========================================
+   HERO CONTENT
+========================================= */
+
+.sutira-hero-content{
+    padding:30px 25px 30px 45px;
+}
+
+.sutira-hero-label{
+    font-size:11px;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    color:#776d62;
+
+    margin-bottom:20px;
+}
+
+.sutira-hero-title{
+    font-family:'Playfair Display',serif;
+
+    font-size:clamp(48px,6vw,82px);
+
+    font-weight:600;
+
+    line-height:.98;
+
+    letter-spacing:-2px;
+
+    margin-bottom:27px;
+}
+
+.sutira-hero-title em{
+    font-weight:500;
+}
+
+.sutira-hero-description{
+    max-width:470px;
+
+    color:#696158;
+
+    font-size:14px;
+
+    line-height:1.8;
+
+    margin-bottom:32px;
+}
+
+/* =========================================
+   HERO BUTTON
+========================================= */
+
+.sutira-hero-btn{
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:14px;
+
+    background:#1b1916;
+
+    color:#fff;
+
+    padding:16px 29px;
+
+    font-size:11px;
+
+    font-weight:600;
+
+    letter-spacing:1.4px;
+
+    text-transform:uppercase;
+
+    transition:.3s;
+}
+
+.sutira-hero-btn:hover{
+    background:#756352;
+
+    transform:translateY(-2px);
+}
+
+.sutira-hero-arrow{
+    font-size:17px;
+
+    line-height:1;
+}
+
+/* =========================================
+   HERO IMAGE
+========================================= */
+
+.sutira-hero-image{
+    position:relative;
+
+    width:100%;
+
+    height:610px;
+
+    overflow:hidden;
+
+    background:#e3dbd0;
+}
+
+.sutira-hero-image img{
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    object-position:center;
+
+    transition:transform 1s ease;
+}
+
+.sutira-hero-image:hover img{
+    transform:scale(1.025);
+}
+
+/* =========================================
+   HERO IMAGE LABEL
+========================================= */
+
+.sutira-hero-tag{
+    position:absolute;
+
+    left:22px;
+    bottom:22px;
+
+    background:rgba(248,245,239,.94);
+
+    padding:13px 17px;
+
+    font-size:10px;
+
+    letter-spacing:1.5px;
+
+    text-transform:uppercase;
+
+    color:#28231e;
+}
+
+/* =========================================
+   SMALL DECORATIVE CIRCLE
+========================================= */
+
+.sutira-hero-circle{
+    position:absolute;
+
+    right:25px;
+    top:25px;
+
+    width:82px;
+    height:82px;
+
+    border-radius:50%;
+
+    background:#f8f5ef;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+
+    font-family:'Playfair Display',serif;
+
+    font-size:11px;
+
+    line-height:1.3;
+
+    padding:10px;
+
+    transform:rotate(8deg);
+
+    box-shadow:0 5px 20px rgba(0,0,0,.06);
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media(max-width:900px){
+
+    .sutira-hero{
+        grid-template-columns:1fr;
+
+        padding:20px 18px 55px;
+
+        gap:0;
+    }
+
+    .sutira-hero-image{
+        order:1;
+
+        height:500px;
+    }
+
+    .sutira-hero-content{
+        order:2;
+
+        padding:45px 5px 10px;
+    }
+
+    .sutira-hero-title{
+        font-size:54px;
+
+        letter-spacing:-1.5px;
+    }
+
+}
+
+@media(max-width:520px){
+
+    .sutira-hero-image{
+        height:440px;
+    }
+
+    .sutira-hero-content{
+        padding-top:35px;
+    }
+
+    .sutira-hero-title{
+        font-size:45px;
+    }
+
+    .sutira-hero-description{
+        font-size:13px;
+    }
+
+    .sutira-hero-btn{
+        width:100%;
+
+        justify-content:center;
+    }
+
+    .sutira-hero-circle{
+        width:70px;
+        height:70px;
+
+        right:15px;
+        top:15px;
+
+        font-size:9px;
+    }
+
+}
+
+</style>
+
+
+<!-- =========================================
+     HERO SECTION
+========================================= -->
+
+<section class="sutira-hero" id="home">
+
+
+    <!-- HERO TEXT -->
+
+    <div class="sutira-hero-content">
+
+        <div class="sutira-hero-label">
+            The New Saree Edit · 2026
+        </div>
+
+
+        <h1 class="sutira-hero-title">
+
+            Draped in<br>
+
+            <em>timeless elegance.</em>
+
+        </h1>
+
+
+        <p class="sutira-hero-description">
+
+            Discover thoughtfully curated Indian sarees
+            that bring together timeless tradition,
+            graceful craftsmanship and contemporary
+            elegance.
+
+        </p>
+
+
+        <a href="#shop" class="sutira-hero-btn">
+
+            Explore Collection
+
+            <span class="sutira-hero-arrow">→</span>
+
+        </a>
+
+    </div>
+
+
+    <!-- HERO IMAGE -->
+
+    <div class="sutira-hero-image">
+
+        <img
+        src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=1200&q=88"
+        alt="Sutira Collection Indian Saree">
+
+
+        <div class="sutira-hero-tag">
+            Indian · Elegant · Timeless
+        </div>
+
+
+        <div class="sutira-hero-circle">
+            Crafted<br>
+            with grace
+        </div>
+
+    </div>
+
+
+</section>
+
+
+<!-- =========================================
+     PART 3 WILL COME BELOW
+========================================= -->
+   <!-- =========================================
+     SUTIRA COLLECTION
+     PART 3 / 10
+     COLLECTIONS SECTION
+========================================= -->
+
+<style>
+
+/* =========================================
+   COLLECTION SECTION
+========================================= */
+
+.sutira-collections-section{
+    max-width:1400px;
+    margin:auto;
+    padding:80px 30px;
+}
+
+
+/* =========================================
+   SECTION HEADING
+========================================= */
+
+.sutira-section-heading{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+
+    margin-bottom:38px;
+}
+
+.sutira-section-mini{
+    font-size:10px;
+    letter-spacing:3px;
+    text-transform:uppercase;
+
+    color:#81766a;
+
+    margin-bottom:10px;
+}
+
+.sutira-section-title{
+    font-family:'Playfair Display',serif;
+
+    font-size:43px;
+
+    font-weight:600;
+
+    line-height:1.1;
+}
+
+.sutira-view-all{
+    font-size:11px;
+
+    letter-spacing:1px;
+
+    text-transform:uppercase;
+
+    border-bottom:1px solid #1b1916;
+
+    padding-bottom:5px;
+
+    transition:.25s;
+}
+
+.sutira-view-all:hover{
+    opacity:.5;
+}
+
+
+/* =========================================
+   COLLECTION GRID
+========================================= */
+
+.sutira-collection-grid{
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:18px;
+}
+
+
+/* =========================================
+   COLLECTION CARD
+========================================= */
+
+.sutira-collection-card{
+    position:relative;
+
+    height:500px;
+
+    overflow:hidden;
+
+    background:#e1d9cf;
+
+    display:block;
+}
+
+.sutira-collection-card img{
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    transition:transform .8s ease;
+}
+
+.sutira-collection-card:hover img{
+    transform:scale(1.045);
+}
+
+
+/* =========================================
+   DARK GRADIENT
+========================================= */
+
+.sutira-collection-card::after{
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+    linear-gradient(
+        to top,
+        rgba(0,0,0,.65),
+        rgba(0,0,0,.05) 55%,
+        transparent
+    );
+
+    pointer-events:none;
+}
+
+
+/* =========================================
+   CARD CONTENT
+========================================= */
+
+.sutira-collection-content{
+    position:absolute;
+
+    left:27px;
+    right:27px;
+    bottom:28px;
+
+    color:#fff;
+
+    z-index:2;
+}
+
+.sutira-collection-number{
+    font-size:10px;
+
+    letter-spacing:2px;
+
+    opacity:.8;
+
+    margin-bottom:9px;
+}
+
+.sutira-collection-name{
+    font-family:'Playfair Display',serif;
+
+    font-size:30px;
+
+    font-weight:500;
+
+    margin-bottom:8px;
+}
+
+.sutira-collection-desc{
+    font-size:11px;
+
+    letter-spacing:.5px;
+
+    opacity:.88;
+
+    margin-bottom:17px;
+}
+
+.sutira-collection-link{
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    font-size:10px;
+
+    letter-spacing:1.3px;
+
+    text-transform:uppercase;
+
+    border-bottom:1px solid rgba(255,255,255,.7);
+
+    padding-bottom:4px;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media(max-width:900px){
+
+    .sutira-collections-section{
+        padding:65px 18px;
+    }
+
+    .sutira-section-heading{
+        align-items:flex-start;
+
+        gap:20px;
+    }
+
+    .sutira-section-title{
+        font-size:35px;
+    }
+
+    .sutira-collection-grid{
+        grid-template-columns:1fr;
+
+        gap:15px;
+    }
+
+    .sutira-collection-card{
+        height:440px;
+    }
+
+}
+
+@media(max-width:520px){
+
+    .sutira-section-heading{
+        display:block;
+    }
+
+    .sutira-view-all{
+        display:inline-block;
+
+        margin-top:15px;
+    }
+
+    .sutira-section-title{
+        font-size:32px;
+    }
+
+    .sutira-collection-card{
+        height:410px;
+    }
+
+    .sutira-collection-content{
+        left:21px;
+        right:21px;
+        bottom:23px;
+    }
+
+}
+
+</style>
+
+
+<!-- =========================================
+     COLLECTIONS
+========================================= -->
+
+<section
+    class="sutira-collections-section"
+    id="collections">
+
+
+    <!-- SECTION HEADER -->
+
+    <div class="sutira-section-heading">
+
+        <div>
+
+            <div class="sutira-section-mini">
+                Curated for you
+            </div>
+
+            <h2 class="sutira-section-title">
+                Explore Our Collections
+            </h2>
+
+        </div>
+
+
+        <a
+            href="#shop"
+            class="sutira-view-all">
+
+            View All Sarees →
+
+        </a>
+
+    </div>
+
+
+    <!-- COLLECTION CARDS -->
+
+    <div class="sutira-collection-grid">
+
+
+        <!-- CARD 1 -->
+
+        <a
+            href="#shop"
+            class="sutira-collection-card">
+
+            <img
+            src="https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=900&q=88"
+            alt="Everyday Sarees">
+
+
+            <div class="sutira-collection-content">
+
+                <div class="sutira-collection-number">
+                    01 · EVERYDAY
+                </div>
+
+                <div class="sutira-collection-name">
+                    Everyday Grace
+                </div>
+
+                <div class="sutira-collection-desc">
+                    Effortless sarees for everyday elegance
+                </div>
+
+                <div class="sutira-collection-link">
+                    Shop Collection →
+                </div>
+
+            </div>
+
+        </a>
+
+
+        <!-- CARD 2 -->
+
+        <a
+            href="#shop"
+            class="sutira-collection-card">
+
+            <img
+            src="https://images.unsplash.com/photo-1583391733956-6c78276477e2?auto=format&fit=crop&w=900&q=88"
+            alt="Festive Sarees">
+
+
+            <div class="sutira-collection-content">
+
+                <div class="sutira-collection-number">
+                    02 · FESTIVE
+                </div>
+
+                <div class="sutira-collection-name">
+                    Festive Edit
+                </div>
+
+                <div class="sutira-collection-desc">
+                    Graceful drapes for every celebration
+                </div>
+
+                <div class="sutira-collection-link">
+                    Shop Collection →
+                </div>
+
+            </div>
+
+        </a>
+
+
+        <!-- CARD 3 -->
+
+        <a
+            href="#shop"
+            class="sutira-collection-card">
+
+            <img
+            src="https://images.unsplash.com/photo-1610189012906-2e7b6b0a8c7d?auto=format&fit=crop&w=900&q=88"
+            alt="Luxury Sarees">
+
+
+            <div class="sutira-collection-content">
+
+                <div class="sutira-collection-number">
+                    03 · LUXURY
+                </div>
+
+                <div class="sutira-collection-name">
+                    The Luxury Edit
+                </div>
+
+                <div class="sutira-collection-desc">
+                    Statement sarees made for special moments
+                </div>
+
+                <div class="sutira-collection-link">
+                    Discover More →
+                </div>
+
+            </div>
+
+        </a>
+
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     PART 4 WILL COME BELOW
+========================================= -->
+   <!-- =========================================
+     SUTIRA COLLECTION
+     PART 4 / 10
+     PRODUCT SECTION
+========================================= -->
+
+<style>
+
+/* =========================================
+   PRODUCT SECTION
+========================================= */
+
+.sutira-products-section{
+    max-width:1400px;
+    margin:auto;
+    padding:80px 30px;
+}
+
+
+/* =========================================
+   PRODUCT HEADER
+========================================= */
+
+.sutira-product-heading{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+
+    margin-bottom:38px;
+}
+
+.sutira-product-mini{
+    font-size:10px;
+    letter-spacing:3px;
+    text-transform:uppercase;
+
+    color:#81766a;
+
+    margin-bottom:10px;
+}
+
+.sutira-product-title{
+    font-family:'Playfair Display',serif;
+
+    font-size:43px;
+
+    font-weight:600;
+}
+
+
+/* =========================================
+   PRODUCT GRID
+========================================= */
+
+.sutira-product-grid{
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:20px;
+}
+
+
+/* =========================================
+   PRODUCT CARD
+========================================= */
+
+.sutira-product-card{
+    position:relative;
+
+    min-width:0;
+}
+
+
+/* =========================================
+   PRODUCT IMAGE
+========================================= */
+
+.sutira-product-image{
+    width:100%;
+
+    height:420px;
+
+    overflow:hidden;
+
+    background:#e9e2d8;
+
+    position:relative;
+}
+
+.sutira-product-image img{
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    transition:transform .6s ease;
+}
+
+.sutira-product-card:hover
+.sutira-product-image img{
+    transform:scale(1.045);
+}
+
+
+/* =========================================
+   SALE BADGE
+========================================= */
+
+.sutira-sale-badge{
+    position:absolute;
+
+    left:13px;
+    top:13px;
+
+    background:#1b1916;
+
+    color:#fff;
+
+    padding:7px 10px;
+
+    font-size:9px;
+
+    letter-spacing:1px;
+
+    text-transform:uppercase;
+
+    z-index:2;
+}
+
+
+/* =========================================
+   WISHLIST
+========================================= */
+
+.sutira-wishlist{
+    position:absolute;
+
+    right:13px;
+    top:13px;
+
+    width:35px;
+    height:35px;
+
+    border:0;
+
+    border-radius:50%;
+
+    background:rgba(248,245,239,.94);
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    cursor:pointer;
+
+    z-index:3;
+
+    font-size:17px;
+
+    transition:.25s;
+}
+
+.sutira-wishlist:hover{
+    transform:scale(1.08);
+}
+
+
+/* =========================================
+   PRODUCT INFO
+========================================= */
+
+.sutira-product-info{
+    padding:16px 2px 0;
+}
+
+.sutira-product-name{
+    font-size:14px;
+
+    line-height:1.45;
+
+    margin-bottom:9px;
+
+    min-height:41px;
+}
+
+.sutira-product-price{
+    display:flex;
+
+    align-items:center;
+
+    gap:9px;
+
+    margin-bottom:12px;
+}
+
+.sutira-current-price{
+    font-size:15px;
+
+    font-weight:700;
+}
+
+.sutira-old-price{
+    color:#968d83;
+
+    font-size:12px;
+
+    text-decoration:line-through;
+}
+
+.sutira-discount{
+    color:#77624d;
+
+    font-size:10px;
+
+    font-weight:600;
+}
+
+
+/* =========================================
+   PRODUCT BUTTONS
+========================================= */
+
+.sutira-product-buttons{
+    display:flex;
+
+    gap:7px;
+}
+
+.sutira-product-buttons button{
+    flex:1;
+
+    border:1px solid #29251f;
+
+    background:transparent;
+
+    padding:11px 7px;
+
+    font-size:9px;
+
+    letter-spacing:.8px;
+
+    text-transform:uppercase;
+
+    cursor:pointer;
+
+    transition:.25s;
+}
+
+.sutira-product-buttons button:first-child{
+    background:#1b1916;
+
+    color:#fff;
+}
+
+.sutira-product-buttons button:hover{
+    background:#756352;
+
+    color:#fff;
+
+    border-color:#756352;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media(max-width:1000px){
+
+    .sutira-product-grid{
+        grid-template-columns:repeat(2,1fr);
+
+        gap:22px 14px;
+    }
+
+    .sutira-product-image{
+        height:350px;
+    }
+
+}
+
+@media(max-width:600px){
+
+    .sutira-products-section{
+        padding:60px 18px;
+    }
+
+    .sutira-product-heading{
+        display:block;
+    }
+
+    .sutira-product-title{
+        font-size:34px;
+    }
+
+    .sutira-product-grid{
+        grid-template-columns:repeat(2,1fr);
+
+        gap:25px 12px;
+    }
+
+    .sutira-product-image{
+        height:255px;
+    }
+
+    .sutira-product-name{
+        font-size:12px;
+
+        min-height:48px;
+    }
+
+    .sutira-product-price{
+        gap:5px;
+
+        flex-wrap:wrap;
+    }
+
+    .sutira-current-price{
+        font-size:13px;
+    }
+
+    .sutira-old-price{
+        font-size:10px;
+    }
+
+    .sutira-discount{
+        font-size:9px;
+    }
+
+    .sutira-product-buttons{
+        flex-direction:column;
+    }
+
+}
+
+</style>
+
+
+<!-- =========================================
+     PRODUCTS
+========================================= -->
+
+<section
+    class="sutira-products-section"
+    id="shop">
+
+
+    <!-- HEADER -->
+
+    <div class="sutira-product-heading">
+
+        <div>
+
+            <div class="sutira-product-mini">
+                Handpicked for you
+            </div>
+
+            <h2 class="sutira-product-title">
+                New Arrivals
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <!-- PRODUCT GRID -->
+
+    <div class="sutira-product-grid">
+
+
+        <!-- PRODUCT 1 -->
+
+        <article
+            class="sutira-product-card"
+            data-product="Mul Cotton Embroidery Saree"
+            data-price="1199">
+
+            <div class="sutira-product-image">
+
+                <span class="sutira-sale-badge">
+                    New
+                </span>
+
+                <button
+                    class="sutira-wishlist"
+                    onclick="sutiraWishlist(this)"
+                    aria-label="Add to wishlist">
+                    ♡
+                </button>
+
+                <img
+                src="https://images.unsplash.com/photo-1610030469668-8e9f641aaf71?auto=format&fit=crop&w=800&q=88"
+                alt="Mul Cotton Embroidery Saree">
+
+            </div>
+
+
+            <div class="sutira-product-info">
+
+                <div class="sutira-product-name">
+                    Mul Cotton Embroidery Saree
+                </div>
+
+                <div class="sutira-product-price">
+
+                    <span class="sutira-current-price">
+                        ₹1,199
+                    </span>
+
+                    <span class="sutira-old-price">
+                        ₹1,599
+                    </span>
+
+                    <span class="sutira-discount">
+                        25% OFF
+                    </span>
+
+                </div>
+
+
+                <div class="sutira-product-buttons">
+
+                    <button
+                        onclick="sutiraAddToCart('Mul Cotton Embroidery Saree',1199)">
+                        Add to Cart
+                    </button>
+
+                    <button
+                        onclick="sutiraBuyNow('Mul Cotton Embroidery Saree',1199)">
+                        Buy Now
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- PRODUCT 2 -->
+
+        <article
+            class="sutira-product-card"
+            data-product="Navy Blue Two-Piece Saree Edit"
+            data-price="3500">
+
+            <div class="sutira-product-image">
+
+                <span class="sutira-sale-badge">
+                    Bestseller
+                </span>
+
+                <button
+                    class="sutira-wishlist"
+                    onclick="sutiraWishlist(this)">
+                    ♡
+                </button>
+
+                <img
+                src="https://images.unsplash.com/photo-1583391733956-6c78276477e2?auto=format&fit=crop&w=800&q=88"
+                alt="Navy Blue Saree">
+
+            </div>
+
+
+            <div class="sutira-product-info">
+
+                <div class="sutira-product-name">
+                    Navy Blue Two-Piece Saree Edit
+                </div>
+
+                <div class="sutira-product-price">
+
+                    <span class="sutira-current-price">
+                        ₹3,500
+                    </span>
+
+                    <span class="sutira-old-price">
+                        ₹4,200
+                    </span>
+
+                    <span class="sutira-discount">
+                        17% OFF
+                    </span>
+
+                </div>
+
+
+                <div class="sutira-product-buttons">
+
+                    <button
+                        onclick="sutiraAddToCart('Navy Blue Two-Piece Saree Edit',3500)">
+                        Add to Cart
+                    </button>
+
+                    <button
+                        onclick="sutiraBuyNow('Navy Blue Two-Piece Saree Edit',3500)">
+                        Buy Now
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- PRODUCT 3 -->
+
+        <article
+            class="sutira-product-card"
+            data-product="Navy Blue Sleeveless Saree Edit"
+            data-price="3550">
+
+            <div class="sutira-product-image">
+
+                <span class="sutira-sale-badge">
+                    New
+                </span>
+
+                <button
+                    class="sutira-wishlist"
+                    onclick="sutiraWishlist(this)">
+                    ♡
+                </button>
+
+                <img
+                src="https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=800&q=88"
+                alt="Navy Blue Saree Collection">
+
+            </div>
+
+
+            <div class="sutira-product-info">
+
+                <div class="sutira-product-name">
+                    Navy Blue Sleeveless Saree Edit
+                </div>
+
+                <div class="sutira-product-price">
+
+                    <span class="sutira-current-price">
+                        ₹3,550
+                    </span>
+
+                    <span class="sutira-old-price">
+                        ₹4,300
+                    </span>
+
+                    <span class="sutira-discount">
+                        17% OFF
+                    </span>
+
+                </div>
+
+
+                <div class="sutira-product-buttons">
+
+                    <button
+                        onclick="sutiraAddToCart('Navy Blue Sleeveless Saree Edit',3550)">
+                        Add to Cart
+                    </button>
+
+                    <button
+                        onclick="sutiraBuyNow('Navy Blue Sleeveless Saree Edit',3550)">
+                        Buy Now
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- PRODUCT 4 -->
+
+        <article
+            class="sutira-product-card"
+            data-product="Classic Indian Silk Saree"
+            data-price="2499">
+
+            <div class="sutira-product-image">
+
+                <span class="sutira-sale-badge">
+                    Popular
+                </span>
+
+                <button
+                    class="sutira-wishlist"
+                    onclick="sutiraWishlist(this)">
+                    ♡
+                </button>
+
+                <img
+                src="https://images.unsplash.com/photo-1609357605129-26f69add5d6e?auto=format&fit=crop&w=800&q=88"
+                alt="Classic Indian Silk Saree">
+
+            </div>
+
+
+            <div class="sutira-product-info">
+
+                <div class="sutira-product-name">
+                    Classic Indian Silk Saree
+                </div>
+
+                <div class="sutira-product-price">
+
+                    <span class="sutira-current-price">
+                        ₹2,499
+                    </span>
+
+                    <span class="sutira-old-price">
+                        ₹3,199
+                    </span>
+
+                    <span class="sutira-discount">
+                        22% OFF
+                    </span>
+
+                </div>
+
+
+                <div class="sutira-product-buttons">
+
+                    <button
+                        onclick="sutiraAddToCart('Classic Indian Silk Saree',2499)">
+                        Add to Cart
+                    </button>
+
+                    <button
+                        onclick="sutiraBuyNow('Classic Indian Silk Saree',2499)">
+                        Buy Now
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     PART 5 WILL COME BELOW
+========================================= -->
+
+
+<script>
+
+/* =========================================
+   WISHLIST
+========================================= */
+
+function sutiraWishlist(button){
+
+    if(button.innerHTML.trim() === "♡"){
+
+        button.innerHTML = "♥";
+
+    }else{
+
+        button.innerHTML = "♡";
+
+    }
+
+}
+
+
+/* =========================================
+   TEMP CART FUNCTION
+   FULL CART WILL COME IN PART 7
+========================================= */
+
+function sutiraAddToCart(name,price){
+
+    if(typeof window.sutiraCart === "undefined"){
+
+        window.sutiraCart = [];
+
+    }
+
+    window.sutiraCart.push({
+        name:name,
+        price:price
+    });
+
+    const count =
+        document.querySelector(".sutira-cart-count");
+
+    if(count){
+
+        count.innerText =
+            window.sutiraCart.length;
+
+    }
+
+    alert(name + " added to cart.");
+
+}
+
+
+/* =========================================
+   TEMP BUY NOW
+   FULL CHECKOUT WILL COME LATER
+========================================= */
+
+function sutiraBuyNow(name,price){
+
+    const message =
+        "Hello, I am interested in " +
+        name +
+        " priced at ₹" +
+        price +
+        ".";
+
+    const whatsapp =
+        "https://wa.me/?text=" +
+        encodeURIComponent(message);
+
+    window.open(whatsapp,"_blank");
+
+}
+
+   </script>
 </body>
 </html>
